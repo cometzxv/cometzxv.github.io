@@ -6,14 +6,18 @@
     <title>Otter Thing</title>
     <style>
         .navmenu {
-            background-color:  navy;
+            background-color:  rgb(101, 79, 60);
             font-family:"Varela Round", sans-serif;
             font-size: 2rem;
+            font-weight: 500;
             display: flex;
             min-height: 4rem;
             flex-direction: row;
             align-items: center;
-            padding: 0 1rem;
+            padding: 0;
+            border-style: solid;
+            border-width: 7.5px;
+            border-color: rgb(71, 55, 42);
             border-radius: 25px 25px 25px 25px
         }
 
@@ -25,7 +29,7 @@
             margin-left: 1rem;
         }
         .end {
-            margin-left: 925px;
+            margin-left: 735px;
         }
         .logothing {
             width: 300px;
@@ -33,24 +37,33 @@
             border-radius: 100% 100% 100% 100%
         }
         .logoname {
+            font-family: Saira;
             font-size: 7rem;
             position: absolute;
-            top: 0px;
+            top: -30px;
             margin-left: 350px;
+        }
+        .menu:hover, .end:hover {
+            font-size: 2.1rem;
+            text-transform: uppercase;
+            color: lightblue;
+            text-decoration: underline;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- replace image later -->
     <img class="logothing" src="https://m.media-amazon.com/images/I/81nEKbrm3AL._AC_UF894,1000_QL80_.jpg">
-    <p class="logoname">Otter thing</p>
+    <p class="logoname">OTTER THING</p>
     <div class="navmenu">
         <a href="#" class="menu">Home</a>
         <a href="#" class="menu">About</a>
-        <a href="#" class="end">End</a>
+        <a href="#" class="menu">Products</a>
+        <a href="#" class="end">Contact</a>
     </div>
 </body>
 </html>
