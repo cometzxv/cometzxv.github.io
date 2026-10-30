@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otter Thing</title>
     <style>
+        body {
+            background-color: rgb(40, 40, 40);
+            padding: 0;
+            margin: 0;
+        
+        }
+        .river {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            bottom: 300px;
+            left: 0;
+            z-index: -1;
+            
+        }
         .navmenu {
-            background-color:  rgb(101, 79, 60);
+            background-color:  rgb(77, 108, 52);
             font-family:"Varela Round", sans-serif;
             font-size: 2rem;
             font-weight: 500;
@@ -15,10 +30,6 @@
             flex-direction: row;
             align-items: center;
             padding: 0;
-            border-style: solid;
-            border-width: 7.5px;
-            border-color: rgb(71, 55, 42);
-            border-radius: 25px 25px 25px 25px
         }
 
         .menu, .end {
@@ -37,6 +48,7 @@
             border-radius: 100% 100% 100% 100%
         }
         .logoname {
+            color: whitesmoke;
             font-family: Saira;
             font-size: 7rem;
             position: absolute;
@@ -44,10 +56,25 @@
             margin-left: 350px;
         }
         .menu:hover, .end:hover {
-            font-size: 2.1rem;
-            text-transform: uppercase;
             color: lightblue;
             text-decoration: underline;
+        }
+        .introduction {
+            width: 450px;
+            height: 450px;
+            background-color: rgb(120, 120, 123);
+            font-size: 2.25rem;
+            text-align: center;
+            position: relative;
+            top: 35px;
+            left: 25px;
+        }
+        .picture1 {
+            width: 461px;
+            height: 421.5px;
+            position: absolute;
+            top: 425px;
+            left: 600px;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,5 +92,10 @@
         <a href="#" class="menu">Products</a>
         <a href="#" class="end">Contact</a>
     </div>
+    <div class="introduction">
+        Otter thing is a company that sells Otter-themed products for Otter enjoyers! We have things like plushies, mugs, and pickle jars. Check our top items below, prices may cost your soul.
+    </div>
+    <img class="river" src="https://www.earth.com/img/16x9/1920/uploads/2026/01/10075512/River-protection.jpg">
+    <img class="picture1" src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original">
 </body>
 </html>
