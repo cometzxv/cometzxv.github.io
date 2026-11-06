@@ -6,7 +6,7 @@
     <title>Otter Thing</title>
     <style>
         body {
-            background-color: rgb(40, 40, 40);
+            background-color: #555c3f;
             padding: 0;
             margin: 0;
             min-height: 300vh;
@@ -20,8 +20,20 @@
             z-index: -1;
             
         }
+        .logo {
+            width: 275px;
+            height: 300px;
+            background-color: whitesmoke;
+            position:relative;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%,0);
+        }
+        #logoimage {
+            transform: scale(0.25);
+        }
         .navmenu {
-            background-color:  rgb(77, 108, 52);
+            background-color:  #414d35;
             font-family:"Varela Round", sans-serif;
             font-size: 2rem;
             font-weight: 500;
@@ -42,19 +54,6 @@
         .end {
             margin-left: 735px;
         }
-        .logothing {
-            width: 300px;
-            height: 300px;
-            border-radius: 100% 100% 100% 100%
-        }
-        .logoname {
-            color: whitesmoke;
-            font-family: Saira;
-            font-size: 7rem;
-            position: absolute;
-            top: -30px;
-            margin-left: 350px;
-        }
         .menu:hover, .end:hover {
             color: lightblue;
             text-decoration: underline;
@@ -64,8 +63,9 @@
             display: flex;
             width: 600px;
             height: 300px;
-            background-color: rgb(120, 120, 123);
+            background-color: #414d35;
             font-size: 2rem;
+            color: whitesmoke;
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -75,11 +75,12 @@
             border-radius: 75px 75px 75px 75px
         }
         .picture1 {
-            width: 461px;
-            height: 421.5px;
+            width: 576.25px;
+            height: 526.875px;
             position: absolute;
-            top: 417.5px;
-            left: 700px;
+            top: 375px;
+            left: 650px;
+            border-radius: 25% 25% 25% 25%
         }
 
         .topproducts {
@@ -115,11 +116,13 @@
 </head>
 <body>
     <!-- replace image later -->
-    <img class="logothing" src="https://m.media-amazon.com/images/I/81nEKbrm3AL._AC_UF894,1000_QL80_.jpg">
-    <p class="logoname">OTTER THING</p>
+    <div class="logo">
+        <img id="logoimage" src="https://shop.sheddaquarium.org/cdn/shop/files/653726278521.jpg?v=1769464462">
+        <p class="logoname">OTTER THING</p>
+    </div>
     <div class="navmenu">
         <a href="#" class="menu">Home</a>
-        <a href="#" class="menu">About</a>
+        <a href="about.html" class="menu">About</a>
         <a href="#" class="menu">Products</a>
         <a href="#" class="end">Contact</a>
     </div>
