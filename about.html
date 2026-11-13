@@ -11,6 +11,13 @@
             margin: 0;
             min-height: 300vh;
         }
+        @keyframes hover {
+            100% {
+                transform: scale(1.1);
+                color: lightblue;
+                text-decoration: underline;
+            }
+        }
         .river {
             position: absolute;
             width: 100%;
@@ -69,9 +76,35 @@
             margin-left: 735px;
         }
         .menu:hover, .end:hover {
-            color: lightblue;
-            text-decoration: underline;
-            transform: scale(1.1);
+            animation-name: hover;
+            animation-duration: 0.25s;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+        }
+
+        .randomkid {
+            position: relative;
+            top: 35px;
+            left: 35px;
+            border-radius: 25% 25% 25% 25%;
+            box-shadow: 30px 30px 0px #414d35;
+        }
+        .aboutthefounder {
+            display: flex;
+            width: 650px;
+            height: 350px;
+            background-color: #414d35;
+            border-radius: 50px 50px 50px 50px;
+            color: whitesmoke;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            position:relative;
+            top: -375px;
+            left: 500px;
+            box-shadow: 30px 30px 0px #38432e;
+            padding: 25px;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,5 +124,9 @@
         <a href="#" class="end">Contact</a>
     </div>
     <img class="river" src="https://www.earth.com/img/16x9/1920/uploads/2026/01/10075512/River-protection.jpg">
+    <img class="randomkid" src="https://media.istockphoto.com/id/471625472/photo/3d-man-standing-and-having-no-idea.jpg?s=170667a&w=0&k=20&c=zbPiAFDMO2x-xpLS56dwFcfjgWRNgARVpZfA3cHtIZA=">
+    <div class="aboutthefounder">
+        <p>Otter thing, a well known otter themed merchandise store, was created by it's founder, Ram D. Kid. Ram D. Kid is well known for his kind acts in jujutsu sorcery, as well as writing his best selling stories like "Luke's github struggles" and "Enzo's Pickle Potion. Today in the year 2132, Ram D. Kid continues to strive in his goal of spreading otter propaganda, while helping others in need.</p>
+    </div>
 </body>
 </html>

@@ -11,6 +11,13 @@
             margin: 0;
             min-height: 300vh;
         }
+        @keyframes hover {
+            100% {
+                transform: scale(1.1);
+                color: lightblue;
+                text-decoration: underline;
+            }
+        }
         .river {
             position: absolute;
             width: 100%;
@@ -69,9 +76,10 @@
             margin-left: 735px;
         }
         .menu:hover, .end:hover {
-            color: lightblue;
-            text-decoration: underline;
-            transform: scale(1.1);
+            animation-name: hover;
+            animation-duration: 0.25s;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
         }
 
         .topproductboard {
