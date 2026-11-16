@@ -11,6 +11,13 @@
             margin: 0;
             min-height: 300vh;
         }
+        @keyframes hover {
+            100% {
+                transform: scale(1.1);
+                color: lightblue;
+                text-decoration: underline;
+            }
+        }
         .river {
             position: absolute;
             width: 100%;
@@ -69,9 +76,28 @@
             margin-left: 735px;
         }
         .menu:hover, .end:hover {
-            color: lightblue;
-            text-decoration: underline;
-            transform: scale(1.1);
+            animation-name: hover;
+            animation-duration: 0.25s;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+        }
+
+        .catalogmenu {
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            position: relative;
+            display: flex;
+        }
+        .catalogitems {
+            width: 300px;
+            height: 350px;
+            background-color: whitesmoke;
+            border-radius: 40px 40px 40px 40px;
+        }
+        .catalogitems img {
+            width: 225px;
+            height: 225px;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,5 +117,11 @@
         <a href="#" class="end">Contact</a>
     </div>
     <img class="river" src="https://www.earth.com/img/16x9/1920/uploads/2026/01/10075512/River-protection.jpg">
+
+    <div class="catalogmenu">
+        <div class="catalogitems" class="item1">
+            <img src="https://media.istockphoto.com/id/1980276924/vector/no-photo-thumbnail-graphic-element-no-found-or-available-image-in-the-gallery-or-album-flat.jpg?s=612x612&w=0&k=20&c=ZBE3NqfzIeHGDPkyvulUw14SaWfDj2rZtyiKv3toItk=">
+        </div>
+    </div>
 </body>
 </html>
