@@ -83,27 +83,52 @@
         }
 
         .catalogmenu {
-            width: 100vw;
-            height: 100vh;
-            background-color: black;
+            width: 100%;
+            height: 100%;
+            top: 10px;
+            background-color: 0;
             position: relative;
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 10px;
+            overflow: hidden;
         }
         .catalogitems {
             width: 300px;
             height: 350px;
-            background-color: whitesmoke;
+            background-color: rgb(194, 194, 194);
             border-radius: 40px 40px 40px 40px;
         }
         .catalogitems img {
-            width: 225px;
-            height: 225px;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%,-20%);
+            border-radius: 20px 20px 20px 20px;
+        }
+        .catalogitems p {
+            font-family: "science gothic";
+            font-size: 1.5rem;
+            position: relative;
+            margin: 20px;
+            color: rgb(121, 121, 121);
+            align-items: center;
+            text-align: center;
+        }
+        .itemprice {
+            color: rgb(121, 121, 121);
+            position: absolute;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="logo">
@@ -120,7 +145,20 @@
 
     <div class="catalogmenu">
         <div class="catalogitems" class="item1">
-            <img src="https://media.istockphoto.com/id/1980276924/vector/no-photo-thumbnail-graphic-element-no-found-or-available-image-in-the-gallery-or-album-flat.jpg?s=612x612&w=0&k=20&c=ZBE3NqfzIeHGDPkyvulUw14SaWfDj2rZtyiKv3toItk=">
+            <img src="https://shop.sheddaquarium.org/cdn/shop/files/653726275469.jpg?v=1770618776">
+            <p>Sea Otter Plushie $99.99</p>
+        </div>
+        <div class="catalogitems" class="item2">
+            <img src="picklejar.png">
+            <p>U.P. & P.P Collab $Coach Nick.99</p>
+        </div>
+        <div class="catalogitems" class="item3">
+            <img src="https://i5.walmartimages.com/seo/Homewish-Kids-Teens-Cute-Otter-4pcs-Bed-Sheets-Cartoon-Animal-King-Sheets-Kawaii-Wildlife-Super-Cozy-Sheet-Set-Microfiber-Bedroom-Decor_7edb5f3b-a8f9-4650-8f9c-b45d26fad709.d10328a1e189d9c1dd4d7aad9af96843.jpeg">
+            <p>Otter Beds Bundle 1 MLB Episode</p>
+        </div>
+        <div class="catalogitems" class="item3">
+            <img src="https://assets.tiltify.com/uploads/auction_item_images/image/3c8085e2-5655-4ab7-ae87-c71facdfd498/blob-a4860113-4a70-4b43-9804-c0443322f1a1.png">
+            <p>Otter PS5 Bundle $GTA6.67</p>
         </div>
     </div>
 </body>
