@@ -22,9 +22,9 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            bottom: 310px;
+            bottom: 50%;
             left: 0;
-            z-index: -1;
+            z-index: -2;
             
         }
         .logo {
@@ -36,15 +36,16 @@
             top: 30px;
             transform: translate(-50%,0);
             border-radius: 40% 40% 0 0;
+            z-index: -1;
         }
         .logoimage {
-            max-width: 65%;
+            max-width: 75%;
             height: auto;
             position: relative;
             left: 50%;
-            top: 10px;
+            top: 30px;
             transform: translate(-50%,0);
-            border-radius: 100% 100% 100% 100%;
+            border-radius: 40% 40% 40% 40%;
         }
         .logoname {
             font-size: 2rem;
@@ -73,7 +74,7 @@
             margin-left: 1rem;
         }
         .end {
-            margin-left: 735px;
+            margin-left: 57.5%;
         }
         .menu:hover, .end:hover {
             animation-name: hover;
@@ -142,8 +143,7 @@
 <body>
     <!-- replace image later -->
     <div class="logo">
-        <img class="logoimage" src="https://shop.sheddaquarium.org/cdn/shop/files/653726278521.jpg?v=1769464462">
-        <p class="logoname">OTTER THING</p>
+        <img class="logoimage" src="otterthing.png">
     </div>
     <div class="navmenu">
         <a href="index.html" class="menu">Home</a>

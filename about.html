@@ -9,7 +9,7 @@
             background-color: #555c3f;
             padding: 0;
             margin: 0;
-            min-height: 300vh;
+            min-height: 100vh;
         }
         @keyframes hover {
             100% {
@@ -22,9 +22,9 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            bottom: 310px;
+            bottom: 50%;
             left: 0;
-            z-index: -1;
+            z-index: -2;
             
         }
         .logo {
@@ -36,15 +36,16 @@
             top: 30px;
             transform: translate(-50%,0);
             border-radius: 40% 40% 0 0;
+            z-index: -1;
         }
         .logoimage {
-            max-width: 65%;
+            max-width: 75%;
             height: auto;
             position: relative;
             left: 50%;
-            top: 10px;
+            top: 30px;
             transform: translate(-50%,0);
-            border-radius: 100% 100% 100% 100%;
+            border-radius: 40% 40% 40% 40%;
         }
         .logoname {
             font-size: 2rem;
@@ -106,6 +107,27 @@
             box-shadow: 30px 30px 0px #38432e;
             padding: 25px;
         }
+
+        .footer {
+            background-color: black;
+            width: 100%;
+            height: 500px;
+            position: relative;
+            margin-top: fill;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvpB9FhDa1_TQzyP2_3YOm6rX1fP09Drpll9XllOKunjI9OzT9d9BF92cF&s=10);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .connections {
+            transform: scale(25%);
+            background-color: white;
+        }
+        .Mediapages {
+            width: 100px;
+            height: 100px;
+            border-radius: 100% 100% 100% 100%;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,8 +136,7 @@
 </head>
 <body>
     <div class="logo">
-        <img class="logoimage" src="https://shop.sheddaquarium.org/cdn/shop/files/653726278521.jpg?v=1769464462">
-        <p class="logoname">OTTER THING</p>
+        <img class="logoimage" src="otterthing.png">
     </div>
     <div class="navmenu">
         <a href="index.html" class="menu">Home</a>
@@ -127,6 +148,26 @@
     <img class="randomkid" src="https://media.istockphoto.com/id/471625472/photo/3d-man-standing-and-having-no-idea.jpg?s=170667a&w=0&k=20&c=zbPiAFDMO2x-xpLS56dwFcfjgWRNgARVpZfA3cHtIZA=">
     <div class="aboutthefounder">
         <p>Otter thing, a well known otter themed merchandise store, was created by it's founder, Ram D. Kid. Ram D. Kid is well known for his kind acts in jujutsu sorcery, as well as writing his best selling stories like "Luke's github struggles" and "Enzo's Pickle Potion". Today in the year 2132, Ram D. Kid continues to strive in his goal of spreading otter propaganda, while helping others in need.</p>
+    </div>
+
+    <div class="footer">
+        <div class="connections">
+            <p>Check out our social media pages!</p>
+            <div class="Mediapages">
+                <img src="https://img.magnific.com/premium-vector/youtube-app-round-icon-social-media-logo-vector-illustration_277909-797.jpg?semt=ais_hybrid&w=740&q=80">
+            </div>
+            <div class="Mediapages">
+                <img src="https://pngimg.com/uploads/tiktok/tiktok_PNG2.png">
+            </div>
+            <div class="Mediapages">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/X_logo.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original">
+            </div>
+            <div class="Mediapages">
+                <img src="https://img.magnific.com/free-vector/instagram-logo_1199-122.jpg?semt=ais_hybrid&w=740&q=80">
+            </div>
+            <div class="Mediapages"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Logo_de_Facebook.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original">
+            </div>
+        </div>
     </div>
 </body>
 </html>
