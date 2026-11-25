@@ -18,6 +18,26 @@
                 text-decoration: underline;
             }
         }
+        @keyframes rainbowtext {
+            16% {
+                color: red;
+            }
+            32% {
+                color:orange;
+            }
+            48% {
+                color:yellow;
+            }
+            64% {
+                color:green;
+            }
+            80% {
+                color:blue;
+            }
+            100% {
+                color:purple;
+            }
+        }
         .river {
             position: absolute;
             width: 100%;
@@ -134,11 +154,73 @@
         .top3 {
             background-image: url("https://i5.walmartimages.com/seo/Otters-in-Water-Leaves-Translucent-Plastic-Cans-Storage-Canisters-with-Lid-Set-of-2_8e8182e4-edee-4fdf-aad6-c2c1132ac45b.d5b67c386e41e97022defda292b1ad8c.jpeg");
         }
+
+        .collabheader {
+            display: flex;
+            width: 95vw;
+            height: 75px;
+            background-color: #cdcdcd;
+            position: relative;
+            left:50%;
+            top: 25px;
+            transform: translate(-50%,0);
+            border-radius: 75px 75px 0 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .collabheader p {
+            font-size: 2.5rem;
+            font-family: "science gothic";
+            color:red;
+            animation-name: rainbowtext;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite
+        }
+
+        .collab {
+            width: 95vw;
+            height: 450px;
+            background-color: whitesmoke;
+            position: relative;
+            left: 50%;
+            top: 15px;
+            transform: translate(-50%,0);
+            border-radius: 0 0 75px 75px;
+            background-image: url("https://patriotpickle.com/wp-content/uploads/2019/11/iStock-801181496-Small-854-800x532.jpg");
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+        .collabers {
+            width: 275px;
+            height: 275px;
+            border-radius: 40% 40% 40% 40%;
+            gap: 50px;
+            background-color: #d5d7c2;
+            position: relative;
+        }
+        .collabers img {
+            width: 275px;
+            height: 275px;
+            border-radius: 40% 40% 40% 40%;
+        }
+        .collabers:hover {
+            animation-name: hover;
+            animation-duration: 0.25s;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- replace image later -->
@@ -152,6 +234,22 @@
         <a href="#" class="end">Contact</a>
     </div>
     <img class="river" src="https://www.earth.com/img/16x9/1920/uploads/2026/01/10075512/River-protection.jpg">
+
+    <div class="collabheader">
+        <p>LIMITED TIME Partner Collabs!</p>
+    </div>
+    <div class="collab">
+        <a href="https://nezycodez.github.io" class="collabers">
+            <img src="enzo.png">
+        </a>
+        <a href="https://index.html" class="collabers">
+            <img src="otterthing.png">
+        </a>
+        <a href="https://postochus.github.io" class="collabers">
+            <img src="luke.png">
+        </a>
+    </div>
+
     <div class="topproductboard">
         <p class="topproductboardname">BEST SELLING</p>
     </div>
